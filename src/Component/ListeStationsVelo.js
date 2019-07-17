@@ -18,9 +18,11 @@ class ListeStationsVelo extends Component {
     }
 
     render() {
+       const ListeStation = this.state.list.map(list => <p>{list.fields.name}</p>);
+
         return (
             <div>
-
+                {ListeStation}
             </div>
         );
     }
